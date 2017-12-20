@@ -73,14 +73,14 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-user"></i> <span>Student Manager</span>
+            <i class="fa fa-user"></i> <span>Product Manager</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="list-student.html"><i class="fa fa-circle-o"></i> Student List</a></li>
-            <li><a href="student-form.html"><i class="fa fa-circle-o"></i> Add Student</a></li>
+            <li><a href="brand-form.html"><i class="fa fa-circle-o"></i> Add new Brand</a></li>
+            <li><a href="occasion-form.html"><i class="fa fa-circle-o"></i> Add new Occasion</a></li>
           </ul>
         </li>         
       </ul>
@@ -93,8 +93,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Student form
-        <small>Student Manager</small>
+        Product Form
+        <small>Product Manager</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -110,47 +110,66 @@
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Add New Student</h3>
+              <h3 class="box-title">Add New Product</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" name="student-form">
+            <form role="form" name="product-form">
               <div class="box-body">
                 <div class="form-group">
-                  <label>Rollnumber</label>
-                  <input type="text" class="form-control" placeholder="Enter rollnumber" name="rollNumber">
+                  <label>Product Name</label>
+                  <input type="text" class="form-control" placeholder="Name of Product" name="name">
                 </div>
                 <div class="form-group">
-                  <label>First Name</label>
-                  <input type="text" class="form-control" placeholder="Enter first name" name="firstName">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" placeholder="Code of Product" name="code">
                 </div>
                 <div class="form-group">
-                  <label>Last Name</label>
-                  <input type="text" class="form-control" placeholder="Enter last name" name="lastName">
+                  <label>Brand</label>
+                  <select name="brandId" class="form-control">
+                    <option value="1">abc</option>
+                  </select>
                 </div>
                 <div class="form-group">
-                  <label>Gender</label>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="gender" value="1" checked>
-                      Male
-                    </label>
-                    <label>
-                      <input type="radio" name="gender" value="0">
-                      Female
-                    </label>
-                  </div>                  
+                  <label>Occasion</label>
+                  <select name="occasionId" class="form-control">
+                    <option value="1">abc</option>
+                  </select>
                 </div>
                 <div class="form-group">
-                  <label>Birthday</label>  
-                  <input type="date" class="form-control" name="birthday">                
-                </div>                
+                  <label>Description</label>
+                  <textarea name="description" rows="3" class="form-control" placeholder="Description"></textarea>
+                </div>
                 <div class="form-group">
-                  <label>File input</label>
-                  <input type="file" id="fileUpload">
-                  <img id="preview" style="max-width: 200px; padding: 5px;">
-                  <input type="hidden" name="avatarUrl">
-                </div>                
+                  <label>Price</label>
+                  <input type="text" class="form-control" placeholder="Price of Product" name="price">
+                </div>               
+                <div class="form-group">
+                    <div class="col-md-3">
+                      <input type="file" id="bigImg1">
+                      <span>Preview big image 1</span>
+                      <img id="viewBig1" src="" alt="" style="width: 100%">
+                      <input type="hidden" name="big1Url">
+                    </div>
+                    <div class="col-md-3">
+                      <input type="file" id="bigImg2">
+                      <span>Preview big image 2</span>
+                      <img id="viewBig2" src="" alt="" style="width: 100%">
+                      <input type="hidden" name="big2Url">
+                    </div>
+                    <div class="col-md-3">
+                      <input type="file" id="smallImg1">
+                      <span>Preview small image 1</span>
+                      <img id="viewSmall1" src="" alt="" style="width: 100%">
+                      <input type="hidden" name="small1Url">
+                    </div>
+                    <div class="col-md-3">
+                      <input type="file" id="smallImg2">
+                      <span>Preview small image 2</span>
+                      <img id="viewSmall2" src="" alt="" style="width: 100%">
+                      <input type="hidden" name="small2Url">
+                    </div>
+                  </div>               
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
@@ -202,6 +221,6 @@
 <script src="js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
-<script src="js/student-form.js"></script>
+<script src="js/product-form.js"></script>
 </body>
 </html>

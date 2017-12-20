@@ -73,14 +73,14 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-user"></i> <span>Student Manager</span>
+            <i class="fa fa-user"></i> <span>Product Manager</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="list-student.html"><i class="fa fa-circle-o"></i> Student List</a></li>
-            <li><a href="student-form.html"><i class="fa fa-circle-o"></i> Add Student</a></li>
+            <li><a href="brand-form.html"><i class="fa fa-circle-o"></i> Add new Brand</a></li>
+            <li><a href="product-form.html"><i class="fa fa-circle-o"></i> Add new Product</a></li>
           </ul>
         </li>         
       </ul>
@@ -93,8 +93,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Category form
-        <small>Category Manager</small>
+        Occasion form
+        <small>Occasion Manager</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -110,26 +110,20 @@
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Add New Category</h3>
+              <h3 class="box-title">Add New Occasion</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" name="student-form">
+            <form role="form" name="occasion-form">
               <div class="box-body">                
                 <div class="form-group">
-                  <label>Name</label>
-                  <input type="text" class="form-control" placeholder="Enter last name" name="name">
+                  <label>Occasion name</label>
+                  <input type="text" class="form-control" placeholder="Enter occasion name" name="name">
                 </div>
                 <div class="form-group">
                   <label>Description</label>
-                  <input type="text" class="form-control" placeholder="Enter last name" name="description">
-                </div>                              
-                <div class="form-group">
-                  <label>File input</label>
-                  <input type="file" id="fileUpload">
-                  <img id="preview" style="max-width: 200px; padding: 5px;">
-                  <input type="hidden" name="imageUrl">
-                </div>                
+                  <textarea name="description" rows="5" class="form-control" placeholder="Description"></textarea>
+                </div>                                         
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
@@ -181,6 +175,6 @@
 <script src="js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
-<script src="js/category-form.js"></script>
+<script src="js/occasion-form.js"></script>
 </body>
 </html>
