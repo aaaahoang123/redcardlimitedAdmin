@@ -1,5 +1,5 @@
-// const brandApi = 'https://rlcapi.herokuapp.com/api/brands';
-const brandApi = 'http://localhost:3000/api/brands';
+ const brandApi = 'https://rlcapi.herokuapp.com/api/brands';
+//const brandApi = 'http://localhost:3000/api/brands';
 
 function submit () {
 	var dataToSend = {

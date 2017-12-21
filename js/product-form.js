@@ -1,5 +1,5 @@
-//var productApi = "https://rlcapi.herokuapp.com/api/products";
-var productApi = 'http://localhost:3000/api/products';
+var productApi = "https://rlcapi.herokuapp.com/api/products";
+//var productApi = 'http://localhost:3000/api/products';
 var FILE_UPLOAD_URL = "https://api.cloudinary.com/v1_1/fpt-aptech/image/upload";
 
 // Chờ dom load hết.
@@ -9,8 +9,9 @@ $(document).ready(function(){
 		var dataToSend = {
 			'name': document.forms['product-form']['name'].value,
 			'productCode': document.forms['product-form']['code'].value,
-			'brandId': '5a3a282cd7ea3a2046d2683c',//document.forms['product-form']['brandId'].value,
-			'occasionId': '5a3a2f6b8ba90520008ec526',//document.forms['product-form']['occasionId'].value,
+			'brandId': document.forms['product-form']['brandId'].value,
+			'categoryId': document.forms['product-form']['categoryId'].value,
+			'shortDetail': document.forms['product-form']['shortDetail'].value,
 			'description': document.forms['product-form']['description'].value,
 			'images': {
 				'bigImgs': [document.forms['product-form']['big1Url'].value,document.forms['product-form']['big2Url'].value],
